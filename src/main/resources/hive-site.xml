@@ -3,7 +3,7 @@
 <!--配置mysql的连接字符串-->
 <property>
 <name>javax.jdo.option.ConnectionURL</name>
-<value>jdbc:mysql://192.168.237.129:3306/hive?createDatabaseIfNotExist=true</value>
+<value>jdbc:mysql://192.168.237.129:3306/hive</value>
 <description>JDBC connect string for a JDBC metastore</description>
 </property>
 <!--指定连接mysql的驱动-->
