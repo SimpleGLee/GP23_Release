@@ -32,13 +32,13 @@
 <!--指定namenode的web ui的监控端口-->
 <property>
    <name>dfs.http.address</name>
-   <value>hadoop01:50070</value>
+   <value>192.168.237.129:50070</value>
 </property>
 
 <!--指定secondary namenode的web ui的监控端口-->
 <property>
    <name>dfs.secondary.http.address</name>
-   <value>hadoop01:50090</value>
+   <value>192.168.237.129:50090</value>
 </property>
 
 <!--指定副本数量-->

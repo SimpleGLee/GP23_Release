@@ -20,7 +20,7 @@
 <!--指定hadoop所使用的文件系统schema（uri），hdfs的老大的地址-->
 <property>
 <name>fs.defaultFS</name>
-<value>hdfs://hadoop01:9000</value>
+<value>hdfs://192.168.237.129:9000</value>
 </property>
 
 <!--指定buffer的大小-->
