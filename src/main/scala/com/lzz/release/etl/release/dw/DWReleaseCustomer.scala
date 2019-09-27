@@ -113,9 +113,10 @@ object DWReleaseCustomer {
   }
 
   def main(args: Array[String]): Unit = {
+
     val appName = "dw_release_job"
-    val bdp_day_begin = "20190924"
-    val bdp_day_end = "20190925"
+    val bdp_day_begin = "2019-09-24"
+    val bdp_day_end = "2019-09-25"
     //执行Job
     handleJobs(appName,bdp_day_begin,bdp_day_end)
   }

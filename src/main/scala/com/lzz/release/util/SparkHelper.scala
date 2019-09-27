@@ -69,8 +69,8 @@ object SparkHelper {
   def rangeDates(begin:String,end:String):Seq[String]={
     val bdp_days = new ArrayBuffer[String]()
     try{
-      val bdp_date_begin: String = DateUtil.dateFormat2String(begin,"yyyyMMdd")
-      val bdp_date_end: String = DateUtil.dateFormat2String(end,"yyyyMMdd")
+      val bdp_date_begin: String = DateUtil.dateFormat2String(begin,"yyyy-MM-dd")
+      val bdp_date_end: String = DateUtil.dateFormat2String(end,"yyyy-MM-dd")
       //如果两个时间相等，取其中的第一个开始时间
       //如果不相等，计算时间差
       if(begin.equals(end)){
@@ -80,7 +80,7 @@ object SparkHelper {
         while (cday<bdp_date_end){
           bdp_days.+=(cday)
           //让初始时间累加，以天为单位
-          val pday: String = DateUtil.dateFormat2StringDiff(cday,1)
+          val pday: String = DateUtil.dateFormat2StringDiff(cday,1,"yyyy-MM-dd")
           cday = pday
         }
       }
